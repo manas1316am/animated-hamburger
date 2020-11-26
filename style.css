@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+#hamburger {
+  display: flex;
+  align-items: center;
+  margin-top: 50vh;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#hamburger span {
+  background-color: #111;
+  width: 2em;
+  height: 0.2em;
+  margin: 0.26em 0;
+  display: block;
+  transition: all 0.4s ease;
+  transform-origin: 0 0;
+}
+
+.Diam span:nth-child(1) {
+  transform: rotate(45deg) translate(1px, -1px);
+}
+
+.Diam span:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.Diam span:nth-child(3) {
+  transform: rotate(-45deg) translate(1px, 0);
+}
